@@ -1,0 +1,21 @@
+.logo {
+  @include link;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 32px;
+  line-height: 1.3125;
+  color: var(--color-brand);
+  fill: var(--color-brand);
+
+  @media screen and (min-width: $table) {
+    font-size: 35px;
+    line-height: 1.21;
+  }
+
+  &__text {
+    color: var(--color-white-primary);
+  }
+
+  margin-bottom: 10px;
+}

@@ -1,0 +1,64 @@
+.site-header {
+  color: var(--color-white-primary);
+  background-color: var(--color-black-primary);
+
+  &__container {
+    padding: 27px;
+    padding-bottom: 95px;
+
+    background-image: url(../images/hero/hero-mobile.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @media screen and (min-width: $table) {
+      padding: 17px 40px;
+      height: 1024px;
+      background-image: url(../images/hero/hero-table.jpg);
+    }
+    @media screen and (min-width: $desktop) {
+      background-image: url(../images/hero/hero-desktop.jpg);
+      height: 768px;
+    }
+  }
+}
+
+.site-nav {
+  margin-bottom: 44px;
+  align-items: center;
+  justify-content: space-between;
+  @media screen and (min-width: $table) {
+    display: flex;
+    margin-bottom: 350px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 230px;
+  }
+
+  &__list {
+    @include list;
+    display: flex;
+    gap: 14px;
+
+    @media screen and (min-width: $table) {
+      gap: 18px;
+    }
+    @media screen and (min-width: $desktop) {
+      gap: 37px;
+    }
+  }
+  &__link {
+    @include link;
+    font-size: 16px;
+    line-height: 1.6;
+
+    @media screen and (min-width: $table) {
+      font-size: 18px;
+      line-height: 1.56;
+    }
+
+    &:hover,
+    &:focus {
+      color: var(--color-brand);
+    }
+  }
+}

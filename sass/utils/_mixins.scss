@@ -1,0 +1,8 @@
+@mixin link {
+    text-decoration: none;
+    color: inherit;    
+}
+
+@mixin list {
+    list-style: none;    
+}

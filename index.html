@@ -1,265 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Finance Ledger</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header class="site-header">
-        <div class="container">
-            <nav class="site-nav">
-                <a href="" class="logo link">
-                    <svg class="logo-icon" width="39.31" height="30.63" class="icon-logo">
-                        <use href="./images/icons.svg.svg#icon-logo"></use>
-                    </svg>
-                    <span class="logo-accent">Finance</span> Ledger
-                </a>
-                <ul class="list">
-                    <li class="item"><a href="#" class="link">Home</a></li>
-                    <li class="item"><a href="#" class="link">About</a></li>
-                    <li class="item"><a href="#" class="link">Cases</a></li>
-                    <li class="item"><a href="#" class="link">Blog</a></li>
-                    <li class="item"><a href="#" class="link">Contact</a></li>
-                </ul>
-            </nav>
-            <section class="hero">
-                <h1 class="title">The Sky Is The Limit</h1>
-                <p class="text">We provide world class financial assistance</p>
-                <a href="" class="link hero-link link-btn"><svg width="9" height="18">
-                        <use href="./images/icons.svg.svg#icon-button"></use>
-                    </svg> Read More</a>
-
-            </section>
-        </div>
-
+      <div class="container site-header__container">
+        <nav class="site-nav">
+          <a href="" class="logo">
+            <svg class="logo__icon" width="39.31" height="30.63">
+              <use href="./images/icons.svg.svg#icon-logo"></use>
+            </svg>
+            Finance <span class="logo__text">Ledger</span>
+          </a>
+          <ul class="site-nav__list">
+            <li class="site-nav__item"><a href="#" class="site-nav__link">Home</a></li>
+            <li class="site-nav__item"><a href="#" class="site-nav__link">About</a></li>
+            <li class="site-nav__item"><a href="#" class="site-nav__link">Cases</a></li>
+            <li class="site-nav__item"><a href="#" class="site-nav__link">Blog</a></li>
+            <li class="site-nav__item"><a href="#" class="site-nav__link">Contact</a></li>
+          </ul>
+        </nav>
+        <section class="hero">
+          <h1 class="hero__title">The Sky Is The Limit</h1>
+          <p class="hero__text">We provide world class financial assistance</p>
+          <a href="" class="hero__link hero__btn"
+            ><svg width="9" height="18">
+              <use href="./images/icons.svg.svg#icon-button"></use>
+            </svg>
+            Read More</a
+          >
+        </section>
+      </div>
     </header>
 
     <main>
+      <!-- benefits -->
+      <section class="section">
+        <div class="container benefits">
+          <ul class="benefits__list">
+            <li class="benefits__item">
+              <div class="benefits__icon-box">
+                <svg class="benefits__icon" width="35" height="35">
+                  <use href="./images/icons.svg.svg#icon-banking"></use>
+                </svg>
+              </div>
 
-        <!-- benefits -->
-        <section class="section ">
-            <div class="container benefits">
-                <ul class="list">
-                    <li class="item">
-                        <div class="icon-box"><svg class="benefits-icon" width="35" height="35">
-                                <use href="./images/icons.svg.svg#icon-banking"></use>
-                            </svg></div>
+              <h3 class="benefits__title">Investmant Banking</h3>
+              <p class="benefits__text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur,
+                necessitatibus!
+              </p>
+            </li>
+            <li class="benefits__item">
+              <div class="benefits__icon-box">
+                <svg class="benefits__icon" width="35" height="35">
+                  <use href="./images/icons.svg.svg#icon-portfolio"></use>
+                </svg>
+              </div>
+              <h3 class="benefits__title">Portfolio Manager</h3>
+              <p class="benefits__text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur,
+                necessitatibus!
+              </p>
+            </li>
+            <li class="benefits__item">
+              <div class="benefits__icon-box">
+                <svg class="benefits__icon" width="35" height="35">
+                  <use href="./images/icons.svg.svg#icon-pencil"></use>
+                </svg>
+              </div>
+              <h3 class="benefits__title">Tax & Custudio</h3>
+              <p class="benefits__text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur,
+                necessitatibus!
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- looking-for -->
+      <section class="section">
+        <div class="container looking-for">
+          <img
+            class="looking-for__img"
+            srcset="
+              ./images/section/looking-for-img.jpg    1x,
+              ./images/section/looking-for-img@2x.jpg 2x
+            "
+            src="./images/section/looking-for-img.jpg"
+            alt="Group of peple"
+          />
+          <div class="section__box">
+            <p class="section__tagline">What you are looking for</p>
+            <h2 class="section__title">We provide bespoke solutions</h2>
+            <p class="section__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum dignissimos
+              quae laudantium asperiores nam aliquid impedit harum illum dolore explicabo ab dolores
+              itaque rerum temporibus doloribus iste maiores deleniti?
+            </p>
+            <a href="" class="site-link"
+              ><svg width="9" height="18">
+                <use href="./images/icons.svg.svg#icon-button"></use>
+              </svg>
+              Read More</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- cases -->
+      <section class="section">
+        <div class="container cases">
+          <p class="section__tagline">This is what we do</p>
+          <h2 class="section__title">Business Cases</h2>
+          <p class="section__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!
+          </p>
+          <ul class="cases__list">
+            <li class="cases__item">
+              <img src="./images/cases-1.jpg" alt="Business case" width="320px" />
+            </li>
+            <li class="cases__item">
+              <img src="./images/cases-2.jpg" alt="Business case" width="320px" />
+            </li>
+            <li class="cases__item">
+              <img src="./images/cases-3.jpg" alt="Business case" width="320px" />
+            </li>
+            <li class="cases__item">
+              <img src="./images/cases-4.jpg" alt="Business case" width="320px" />
+            </li>
+            <li class="cases__item">
+              <img src="./images/cases-5.jpg" alt="Business case" width="320px" />
+            </li>
+            <li class="cases__item">
+              <img src="./images/cases-6.jpg" alt="Business case" width="320px" />
+            </li>
+            <li class="cases__item">
+              <img src="./images/cases-7.jpg" alt="Business case" width="320px" />
+            </li>
+            <li class="cases__item">
+              <img src="./images/cases-8.jpg" alt="Business case" width="320px" />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- blog -->
+      <section class="section">
+        <div class="container blog">
+          <div class="section__box">
+            <p class="section__tagline">April 16 2020</p>
+            <h2 class="section__title">Blog Post One</h2>
+            <p class="section__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum dignissimos
+              quae laudantium asperiores nam aliquid impedit harum illum dolore explicabo ab dolores
+              itaque rerum temporibus doloribus iste maiores deleniti?
+            </p>
+            <a href="" class="site-link">
+              <svg width="9" height="18">
+                <use href="./images/icons.svg.svg#icon-button"></use>
+              </svg>
+              Read Our Blog</a
+            >
+          </div>
+          <img class="blog__img" src="./images/blog.jpg" alt="Group of peple" width="680px" />
+        </div>
+      </section>
+      <!-- team -->
+      <section class="section">
+        <div class="container team">
+          <p class="section__">Who we are</p>
+          <h2 class="section__title">Our Professional Team</h2>
+          <p class="section__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!
+          </p>
+          <ul class="team__list">
+            <li class="team__item">
+              <div class="team__card">
+                <img src="/images/president.jpg" alt="President" width="420px" />
+                <ul class="social">
+                  <li class="social__item">
+                    <a href="#" class="social__link">
+                      <svg class="social__icon" width="32" height="32">
+                        <use href="./images/icons.svg.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a href="#" class="social__link">
+                      <svg class="social__icon" width="32" height="32">
+                        <use href="./images/icons.svg.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a href="#" class="social__link">
+                      <svg class="social__icon" width="40" height="35">
+                        <use href="./images/icons.svg.svg#icon-youtube"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a href="#" class="social__link">
+                      <svg class="social__icon" width="31" height="35">
+                        <use href="./images/icons.svg.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="team__info">
+                <h2 class="team__title">John Doe</h2>
+                <p class="team__text">President</p>
+              </div>
+            </li>
+            <li class="team__item">
+              <div class="team__card">
+                <img src="/images/vice-president.jpg" alt="Vice President" width="420px" />
+              </div>
+              <div class="team__info">
+                <h2 class="team__title">Jane Doe</h2>
+                <p class="team__text">Vice President</p>
+              </div>
+            </li>
+            <li class="team__item">
+              <div class="team__card">
+                <img src="/images/marketing-head.jpg" alt="Marketing Head" width="420px" />
+              </div>
+              <div class="team__info">
+                <h2 class="team__title">Steve Smith</h2>
+                <p class="team__text">Marketing Head</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container callback">
+          <img class="callback__img" src="./images/callback.jpg" alt="callback" width="680px" />
+          <div class="section__box">
+            <h2 class="section__title">Request Callback</h2>
+            <form name="callback" class="form">
+              <div class="form__item">
+                <input class="form__input" type="text" placeholder=" " id="name" required />
+                <label class="form__label" for="name"> Enter your name</label>
+              </div>
+              <div class="form__item">
+                <input class="form__input" type="email" placeholder=" " id="email" required />
+                <label class="form__label" for="email">Enter email*</label>
+              </div>
 
-                        <h3 class="title">Investmant Banking</h3>
-                        <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur,
-                            necessitatibus!</p>
-                    </li>
-                    <li class="item">
-                        <div class="icon-box"><svg class="benefits-icon" width="35" height="35">
-                                <use href="./images/icons.svg.svg#icon-portfolio"></use>
-                            </svg></div>
-                        <h3 class="title">Portfolio Manager</h3>
-                        <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur,
-                            necessitatibus!</p>
-                    </li>
-                    <li class="item">
-                        <div class="icon-box"><svg class="benefits-icon" width="35" height="35">
-                                <use href="./images/icons.svg.svg#icon-pencil"></use>
-                            </svg></div>
-                        <h3 class="title">Tax & Custudio</h3>
-                        <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur,
-                            necessitatibus!</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <!-- looking-for -->
-        <section class="section">
-            <div class="container looking-for">
-                <img src="./images/rectangle.jpg" alt="Group of peple" width="680px">
-                <div class="section-content">
-                    <p class="tagline">What you are looking for</p>
-                    <h2 class="section-title">We provide bespoke solutions</h2>
-                    <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum
-                        dignissimos quae
-                        laudantium
-                        asperiores nam
-                        aliquid impedit harum illum dolore explicabo ab dolores itaque rerum temporibus doloribus iste
-                        maiores deleniti?
-                    </p>
-                    <a href="" class="link link-btn"><svg width="9" height="18">
-                            <use href="./images/icons.svg.svg#icon-button"></use>
-                        </svg> Read More</a>
-                </div>
-            </div>
-        </section>
-        <!-- cases -->
-        <section class="section">
-            <div class="container cases">
-                <p class="tagline">This is what we do</p>
-                <h2 class="section-title">Business Cases</h2>
-                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!</p>
-                <ul class="list">
-                    <li class="item"><img src="./images/cases-1.jpg" alt="Business case" width="320px"></li>
-                    <li class="item"><img src="./images/cases-2.jpg" alt="Business case" width="320px"></li>
-                    <li class="item"><img src="./images/cases-3.jpg" alt="Business case" width="320px"></li>
-                    <li class="item"><img src="./images/cases-4.jpg" alt="Business case" width="320px"></li>
-                    <li class="item"><img src="./images/cases-5.jpg" alt="Business case" width="320px"></li>
-                    <li class="item"><img src="./images/cases-6.jpg" alt="Business case" width="320px"></li>
-                    <li class="item"><img src="./images/cases-7.jpg" alt="Business case" width="320px"></li>
-                    <li class="item"><img src="./images/cases-8.jpg" alt="Business case" width="320px"></li>
-                </ul>
-            </div>
-        </section>
-        <!-- blog -->
-        <section class="section">
-            <div class="container blog">
-                <div class="section-content">
-                    <p class="tagline">April 16 2020</p>
-                    <h2 class="section-title">Blog Post One</h2>
-                    <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum
-                        dignissimos quae laudantium asperiores nam
-                        aliquid impedit harum illum dolore explicabo ab dolores itaque rerum temporibus doloribus iste
-                        maiores deleniti?
-                    </p>
-                    <a href="" class="link link-btn"> <svg width="9" height="18">
-                            <use href="./images/icons.svg.svg#icon-button"></use>
-                        </svg> Read Our Blog</a>
-                </div>
-                <img src="./images/blog.jpg" alt="Group of peple" width="680px">
-            </div>
-        </section>
-        <!-- team -->
-        <section class="section">
-            <div class="container team">
-                <p class="tagline">Who we are</p>
-                <h2 class="section-title">Our Professional Team</h2>
-                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!
-                </p>
-                <ul class="list">
-                    <li class="item">
-                        <div class="team-card"><img src="/images/president.jpg" alt="President" width="420px">
-                        <ul class="list sn-list">
-                            <li class="item">
-                                <a href="#" class="link">
-                                    <svg class="icon" width="32" height="32">
-                                        <use href="./images/icons.svg.svg#icon-facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="item">
-                                <a href="#" class="link">
-                                    <svg class="icon" width="32" height="32">
-                                        <use href="./images/icons.svg.svg#icon-twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="item">
-                                <a href="#" class="link">
-                                    <svg class="icon" width="40" height="35">
-                                        <use href="./images/icons.svg.svg#icon-youtube"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="item">
-                                <a href="#" class="link">
-                                    <svg class="icon" width="31" height="35">
-                                        <use href="./images/icons.svg.svg#icon-instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                        </div>
-                        <div class="team-info">
-                            <h2 class="title">John Doe</h2>
-                            <p class="text">President</p>
-                        </div>
-                    </li>
-                    <li class="item">
-                        <div class="team-card"><img src="/images/vice-president.jpg" alt="Vice President" width="420px">
-                        </div>
-                        <div class="team-info">
-                            <h2 class="title">Jane Doe</h2>
-                            <p class="text">Vice President</p>
-                        </div>
-                    </li>
-                    <li class="item">
-                        <div class="team-card"><img src="/images/marketing-head.jpg" alt="Marketing Head" width="420px">
-                        </div>
-                        <div class="team-info">
-                            <h2 class="title">Steve Smith</h2>
-                            <p class="text">Marketing Head</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="section">
-            <div class="container callback"><img src="./images/callback.jpg" alt="callback" width="680px">
-                <div class="section-content">
-                    <h2 class="section-title">Request Callback</h2>
-                    <form name="callback">
-                        <div class="form-item">
-                            <input class="form-input" type="text" placeholder=" " id="name" required>
-                            <label class="form-label" for="name">
-                                Enter your name</label>
-                        </div>
-                        <div class="form-item">
-                            <input class="form-input" type="email" placeholder=" " id="email" required>
-                            <label class="form-label" for="email">Enter email*</label>
-                        </div>
-                        
-                        <button type="submit" class="submit-btn">
-                            Send
-                        </button>
-                    </form>
-                </div>
-            </div>
-
-        </section>
+              <button type="submit" class="btn btn__submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <ul class="list sn-list">
-                <li class="item">
-                    <a href="#" class="link">
-                        <svg class="icon" width="32" height="32">
-                            <use href="./images/icons.svg.svg#icon-facebook"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="#" class="link">
-                        <svg class="icon" width="32" height="32">
-                            <use href="./images/icons.svg.svg#icon-twitter"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="#" class="link">
-                        <svg class="icon" width="40" height="35">
-                            <use href="./images/icons.svg.svg#icon-youtube"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="#" class="link">
-                        <svg class="icon" width="31" height="35">
-                            <use href="./images/icons.svg.svg#icon-instagram"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-            <h2 class="title">Copyright © 2021 - FinanceLedger</h2>
-        </div>
+      <div class="container">
+        <ul class="social">
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg class="social__icon" width="32" height="32">
+                <use href="./images/icons.svg.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg class="social__icon" width="32" height="32">
+                <use href="./images/icons.svg.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg class="social__icon" width="40" height="35">
+                <use href="./images/icons.svg.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg class="social__icon" width="31" height="35">
+                <use href="./images/icons.svg.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <p class="footer__text">Copyright © 2021 - FinanceLedger</p>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
