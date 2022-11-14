@@ -48,17 +48,38 @@
   }
   &__link {
     @include link;
+    position: relative;
     font-size: 16px;
     line-height: 1.6;
+
+    transition: color 250ms linear;
 
     @media screen and (min-width: $table) {
       font-size: 18px;
       line-height: 1.56;
     }
 
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: -5px;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background-color: var(--color-brand);
+      transform: scale(0);
+      transition: transform 250ms linear;
+    }
+
     &:hover,
     &:focus {
       color: var(--color-brand);
+
+      &::after {
+        transform: scale(1);
+        
+      }
     }
   }
 }

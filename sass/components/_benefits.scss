@@ -1,0 +1,46 @@
+.benefits {
+  &__list {
+    @include list;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-align: center;
+
+    @media screen and (min-width: $table) {
+      flex-direction: row;
+      gap: 50px;
+      justify-content: space-around;
+      padding: 0 50px;
+    }
+  }
+
+  &__icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 11px;
+    width: 64px;
+    height: 64px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+
+    background-color: var(--color-brand);
+    fill: var(--color-white-primary);
+
+    transition: background-color 250ms, fill 250ms, border-color 250ms;
+
+    &:hover,
+    &:focus {
+      border-color: var(--color-brand);
+      fill: var(--color-brand);
+      background-color: var(--color-white-primary);
+    }
+  }
+  &__title {
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.66;
+  }
+}
