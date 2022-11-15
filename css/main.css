@@ -235,6 +235,23 @@ img {
   padding-top: 30px;
 }
 
+.section__tagline {
+  margin-bottom: 5px;
+  font-size: 18px;
+  line-height: 1.66;
+}
+
+.section__title {
+  margin-bottom: 25px;
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 1.26;
+}
+
+.section__text {
+  margin-bottom: 15px;
+}
+
 .benefits__list {
   list-style: none;
   display: -webkit-box;
@@ -290,4 +307,9 @@ img {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.66;
+}
+
+.looking-for {
+  color: var(--color-white-primary);
+  background-color: var(--color-brand);
 }/*# sourceMappingURL=main.css.map */

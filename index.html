@@ -97,15 +97,30 @@
       <!-- looking-for -->
       <section class="section">
         <div class="container looking-for">
-          <img
-            class="looking-for__img"
-            srcset="
-              ./images/section/looking-for-img.jpg    1x,
-              ./images/section/looking-for-img@2x.jpg 2x
-            "
-            src="./images/section/looking-for-img.jpg"
-            alt="Group of peple"
-          />
+          <picture>
+            <source
+              srcset="
+                ./images/section/looking-for-deskpot-img.jpg    1x,
+                ./images/section/looking-for-deskpot-img@2x.jpg 2x
+              "
+              media="(min-width: 1360px)"
+            />
+            <source
+              srcset="
+                ./images/section/looking-for-table-img.jpg    1x,
+                ./images/section/looking-for-table-img@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/section/looking-for-mobil-img.jpg    1x,
+                ./images/section/looking-for-mobil-img@2x.jpg 2x
+              "
+              media="(min-width: 320px)"
+            />
+            <img src="./images/section/looking-for-mobil-img.jpg" alt="Group of peple" />
+          </picture>
           <div class="section__box">
             <p class="section__tagline">What you are looking for</p>
             <h2 class="section__title">We provide bespoke solutions</h2>
