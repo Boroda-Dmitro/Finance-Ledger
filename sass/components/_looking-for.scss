@@ -1,5 +1,9 @@
 .looking-for {
     color: var(--color-white-primary);
     background-color: var(--color-brand);
+
+    @media screen and (min-width: $table) {
+        display: flex;
+    }
 }
 

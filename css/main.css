@@ -234,22 +234,57 @@ img {
 .section--fist {
   padding-top: 30px;
 }
-
+.section__box {
+  padding: 30px;
+}
+@media screen and (min-width: 768px) {
+  .section__box {
+    max-width: 384px;
+    padding: 30px 39px 30px 30px;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .section__box {
+    max-width: 680px;
+    padding: 84px 44px 84px 30px;
+  }
+}
 .section__tagline {
   margin-bottom: 5px;
   font-size: 18px;
   line-height: 1.66;
 }
-
+@media screen and (min-width: 768px) {
+  .section__tagline {
+    font-size: 20px;
+    line-height: 1.65;
+  }
+}
 .section__title {
   margin-bottom: 25px;
   font-weight: 300;
   font-size: 38px;
   line-height: 1.26;
 }
-
+@media screen and (min-width: 768px) {
+  .section__title {
+    width: 204px;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .section__title {
+    width: 100%;
+  }
+}
 .section__text {
   margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .section__text {
+    font-size: 18px;
+    line-height: 1.56;
+    margin-bottom: 20px;
+  }
 }
 
 .benefits__list {
@@ -312,4 +347,47 @@ img {
 .looking-for {
   color: var(--color-white-primary);
   background-color: var(--color-brand);
+}
+@media screen and (min-width: 768px) {
+  .looking-for {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.site-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  color: inherit;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 10px 35px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 1.625;
+  fill: currentColor;
+  -webkit-transition: color 250ms, background-color 250ms;
+  transition: color 250ms, background-color 250ms;
+}
+.site-link__icon {
+  margin-right: 5px;
+}
+.site-link:hover, .site-link:focus {
+  background-color: var(--color-white-primary);
+  color: var(--color-brand);
+}
+
+.cases {
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
